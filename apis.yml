@@ -1,7 +1,22 @@
 aid: ypxfood
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ypxfood.png
 name: ypxfood
-description: ypxfood is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ypxfood (YPX Cayman) is a Taiwanese quick-service restaurant company specializing in
+  Taiwanese food and snacks, backed by Qiming Venture Partners, LionRock Capital, and Ignition Capital.
+  It is a consumer restaurant and food business with no public developer or API surface; enrichment probes
+  found the corporate website (Cloudflare-fronted, returning 403 to automated clients) and no documentation,
+  OpenAPI, SDKs, or well-known discovery endpoints. This profile is retained as a network company record.
 url: https://raw.githubusercontent.com/api-evangelist/ypxfood/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +26,26 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Food
+- Restaurant
+- Quick Service Restaurant
+- Taiwan
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/ypxfood-domain-security.yml
 - type: Website
   url: https://ypxfood.com
